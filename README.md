@@ -99,6 +99,19 @@ pip install -r requirements.txt
 python -m streamlit run app.py
 ```
 
+## Automated deployment options
+
+There are multiple ways to deploy this app. Streamlit Community Cloud is the simplest (use the UI to select this repo). If you prefer automated CI-based deploys, the repo includes optional workflows for Render and Heroku. These are disabled until you provide the required secrets.
+
+Secrets to set in GitHub (Repository Settings → Secrets → Actions):
+
+- `RENDER_API_KEY` — Render service API key
+- `RENDER_SERVICE_ID` — Render service id (the numeric ID of your web service)
+- `HEROKU_API_KEY` — Heroku API key
+- `HEROKU_APP_NAME` — Heroku app name
+
+Once those secrets are set, pushes to `main` will trigger the respective deploy workflows.
+
 ## Run Tests
 
 ```bash
