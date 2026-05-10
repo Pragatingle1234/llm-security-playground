@@ -46,7 +46,7 @@ def render() -> None:
             data=csv_data,
             file_name="security_logs.csv",
             mime="text/csv",
-            use_container_width=True,
+            width="stretch",
         )
     with d2:
         st.download_button(
@@ -54,11 +54,11 @@ def render() -> None:
             data=json_data,
             file_name="security_logs.json",
             mime="application/json",
-            use_container_width=True,
+            width="stretch",
         )
 
     st.markdown("### Attack Attempts")
-    st.dataframe(filtered, use_container_width=True)
+    st.dataframe(filtered, width="stretch")
 
     st.markdown("### Event Distribution")
     sev_counts = filtered["severity"].value_counts().reindex(
