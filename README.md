@@ -1,5 +1,7 @@
 # LLM Prompt Injection Security Playground
 
+![CI status](https://github.com/Pragatingle1234/llm-security-playground/actions/workflows/ci.yml/badge.svg)
+
 A Streamlit security engineering playground that simulates prompt injection attacks against an LLM-style assistant and compares vulnerable behavior against protected behavior.
 
 ## What It Does
