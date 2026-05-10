@@ -1,0 +1,7 @@
+[global]
+title = "LLM Prompt Injection Security Playground"
+
+[server]
+headless = true
+port = 8501
+enableCORS = false
