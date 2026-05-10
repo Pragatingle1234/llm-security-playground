@@ -3,6 +3,8 @@
 ![CI status](https://github.com/Pragatingle1234/llm-security-playground/actions/workflows/ci.yml/badge.svg)
 [![Live App](https://img.shields.io/badge/live%20app-render-000000?logo=render&logoColor=white)](https://llm-security-playground.onrender.com)
 
+![Screenshots](https://img.shields.io/badge/screenshots-included-2ea44f)
+
 A Streamlit security engineering playground that simulates prompt injection attacks against an LLM-style assistant and compares vulnerable behavior against protected behavior.
 
 ## What It Does
@@ -33,6 +35,10 @@ This project helps you demonstrate AI security risk and controls in a visual, ha
 ### SOC Security Logs Dashboard
 
 ![SOC Logs Dashboard](docs/screenshots/soc-dashboard.png)
+
+### Live Deployment
+
+![Live app running on Render](docs/screenshots/home-dashboard.png)
 
 ## Attack Demo
 
@@ -104,14 +110,12 @@ python -m streamlit run app.py
 
 The recommended free deployment path is Render. The repository includes a Dockerfile and Render blueprint, so you can deploy it directly from GitHub without extra infrastructure.
 
-Optional CI-based deploy workflows are also included. If you enable them, set these secrets in GitHub (Repository Settings → Secrets → Actions):
+If you want to use the optional GitHub Actions Render workflow, set these secrets in GitHub (Repository Settings → Secrets → Actions):
 
 - `RENDER_API_KEY` — Render service API key
 - `RENDER_SERVICE_ID` — Render service id (the numeric ID of your web service)
-- `HEROKU_API_KEY` — Heroku API key
-- `HEROKU_APP_NAME` — Heroku app name
 
-Once those secrets are set, pushes to `main` will trigger the respective deploy workflows.
+Once those secrets are set, pushes to `main` will trigger the Render workflow.
 
 ### Render quick deploy
 
@@ -120,6 +124,15 @@ Once those secrets are set, pushes to `main` will trigger the respective deploy 
 3. Render will detect the Dockerfile automatically.
 4. If you use the Render blueprint, import `render.yaml` and create the service.
 5. Deploy the `main` branch.
+
+## Custom Domain
+
+If you have a domain, you can connect it from the Render dashboard after the service is live.
+
+1. Open the Render service settings.
+2. Add your custom domain.
+3. Update your DNS records as Render instructs.
+4. Wait for SSL provisioning to complete.
 
 ## Run Tests
 
