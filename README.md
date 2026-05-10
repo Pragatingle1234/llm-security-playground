@@ -20,21 +20,17 @@ This project helps you demonstrate AI security risk and controls in a visual, ha
 
 ## Screenshots
 
-### Home Dashboard
+### Home Dashboard and Chatbot
 
-![Home Dashboard](docs/screenshots/home-dashboard.png)
+| Home Dashboard | Chatbot Modes |
+| --- | --- |
+| ![Home Dashboard](docs/screenshots/home-dashboard.png) | ![Vulnerable vs Protected Chatbot](docs/screenshots/chatbot-modes.png) |
 
-### Chatbot: Protected Response to Injection
+### Prompt Injection and SOC Monitoring
 
-![Vulnerable vs Protected Chatbot](docs/screenshots/chatbot-modes.png)
-
-### Prompt Injection Module
-
-![Prompt Injection Demo](docs/screenshots/prompt-injection-demo.png)
-
-### SOC Security Logs Dashboard
-
-![SOC Logs Dashboard](docs/screenshots/soc-dashboard.png)
+| Prompt Injection Module | SOC Security Logs Dashboard |
+| --- | --- |
+| ![Prompt Injection Demo](docs/screenshots/prompt-injection-demo.png) | ![SOC Logs Dashboard](docs/screenshots/soc-dashboard.png) |
 
 ### Live Deployment
 
@@ -133,6 +129,19 @@ If you have a domain, you can connect it from the Render dashboard after the ser
 2. Add your custom domain.
 3. Update your DNS records as Render instructs.
 4. Wait for SSL provisioning to complete.
+
+## Deployment Checklist
+
+Use this before handing the project to someone else or redeploying it.
+
+- Confirm the GitHub repo is public and on `main`.
+- Confirm the Render service points at the correct repository.
+- Confirm the Dockerfile exists at the repo root.
+- Confirm the Render service is using the free instance type.
+- Confirm the live app URL loads and the home dashboard renders.
+- Confirm screenshots in `docs/screenshots/` are present.
+- Confirm `.env.example` is committed for local reference.
+- Confirm the CI workflow passes on the latest push.
 
 ## Run Tests
 
