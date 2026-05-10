@@ -1,6 +1,7 @@
 # LLM Prompt Injection Security Playground
 
 ![CI status](https://github.com/Pragatingle1234/llm-security-playground/actions/workflows/ci.yml/badge.svg)
+[![Live App](https://img.shields.io/badge/live%20app-render-000000?logo=render&logoColor=white)](https://llm-security-playground.onrender.com)
 
 A Streamlit security engineering playground that simulates prompt injection attacks against an LLM-style assistant and compares vulnerable behavior against protected behavior.
 
@@ -101,11 +102,9 @@ python -m streamlit run app.py
 
 ## Automated deployment options
 
-There are multiple ways to deploy this app. Streamlit Community Cloud is the simplest (use the UI to select this repo). If you prefer automated CI-based deploys, the repo includes optional workflows for Render and Heroku. These are disabled until you provide the required secrets.
+The recommended free deployment path is Render. The repository includes a Dockerfile and Render blueprint, so you can deploy it directly from GitHub without extra infrastructure.
 
-For a simpler alternative host, this repository now also includes a Dockerfile and Render blueprint, so you can deploy it directly from GitHub without Streamlit Community Cloud.
-
-Secrets to set in GitHub (Repository Settings → Secrets → Actions):
+Optional CI-based deploy workflows are also included. If you enable them, set these secrets in GitHub (Repository Settings → Secrets → Actions):
 
 - `RENDER_API_KEY` — Render service API key
 - `RENDER_SERVICE_ID` — Render service id (the numeric ID of your web service)
