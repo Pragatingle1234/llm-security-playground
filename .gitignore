@@ -12,6 +12,9 @@ env/
 # Streamlit local config and logs
 .streamlit/
 
+# Local environment files
+.env
+
 # OS/editor
 .DS_Store
 Thumbs.db

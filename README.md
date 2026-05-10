@@ -34,7 +34,7 @@ This project helps you demonstrate AI security risk and controls in a visual, ha
 
 ### Live Deployment
 
-![Live app running on Render](docs/screenshots/home-dashboard.png)
+![Live app running on Render](docs/screenshots/live-render.png)
 
 ## Attack Demo
 
