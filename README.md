@@ -15,22 +15,21 @@ This project helps you demonstrate AI security risk and controls in a visual, ha
 
 ## Screenshots
 
-Add screenshots to this section after running the app.
+### Home Dashboard
 
-Recommended captures:
-- Home dashboard overview
-- Chatbot in Vulnerable vs Protected mode
-- Prompt injection attack module
-- SOC logs dashboard with charts
-
-Example markdown once images are added:
-
-```markdown
 ![Home Dashboard](docs/screenshots/home-dashboard.png)
+
+### Chatbot: Protected Response to Injection
+
 ![Vulnerable vs Protected Chatbot](docs/screenshots/chatbot-modes.png)
+
+### Prompt Injection Module
+
 ![Prompt Injection Demo](docs/screenshots/prompt-injection-demo.png)
+
+### SOC Security Logs Dashboard
+
 ![SOC Logs Dashboard](docs/screenshots/soc-dashboard.png)
-```
 
 ## Attack Demo
 
@@ -43,10 +42,7 @@ Use this short walkthrough during interviews or demos.
 5. Switch to Protected Mode.
 6. Send the same payload again.
 7. Observe blocked response with mitigation explanation.
-8. Open Security Logs Viewer and show:
-     - blocked event count
-     - severity distribution
-     - mitigation action and timeline
+8. Open Security Logs Viewer and show blocked event count, severity distribution, and mitigation timeline.
 
 ## Architecture
 
