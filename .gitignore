@@ -1,0 +1,18 @@
+# Python cache/artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Streamlit local config and logs
+.streamlit/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
