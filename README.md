@@ -103,6 +103,8 @@ python -m streamlit run app.py
 
 There are multiple ways to deploy this app. Streamlit Community Cloud is the simplest (use the UI to select this repo). If you prefer automated CI-based deploys, the repo includes optional workflows for Render and Heroku. These are disabled until you provide the required secrets.
 
+For a simpler alternative host, this repository now also includes a Dockerfile and Render blueprint, so you can deploy it directly from GitHub without Streamlit Community Cloud.
+
 Secrets to set in GitHub (Repository Settings → Secrets → Actions):
 
 - `RENDER_API_KEY` — Render service API key
@@ -111,6 +113,14 @@ Secrets to set in GitHub (Repository Settings → Secrets → Actions):
 - `HEROKU_APP_NAME` — Heroku app name
 
 Once those secrets are set, pushes to `main` will trigger the respective deploy workflows.
+
+### Render quick deploy
+
+1. Open Render and choose a new Web Service from GitHub.
+2. Select this repository.
+3. Render will detect the Dockerfile automatically.
+4. If you use the Render blueprint, import `render.yaml` and create the service.
+5. Deploy the `main` branch.
 
 ## Run Tests
 

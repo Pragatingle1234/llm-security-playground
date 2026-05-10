@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: llm-security-playground
+    env: docker
+    plan: free
+    autoDeploy: true
